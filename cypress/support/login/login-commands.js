@@ -6,6 +6,7 @@ Cypress.Commands.add("logInUser", () => {
     cy.get("#enter-password").type("Password1!");
     cy.get("#buttonLabel-enter-password-login-button").click();
     // cy.get('#auth-pn-next-button').click();
+    cy.wait(5000)
   });
   
   Cypress.Commands.add("logOutUser", () => {
